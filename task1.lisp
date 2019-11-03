@@ -25,11 +25,11 @@
 (defun find-element (lst to-find)
     (setq i 0)
     (setq elements '())
-    (loop for x in '(2 1 4 1 7 8 6 9)
+    (loop for x in lst
         do (setq i (+ i 1))
         do (if (= to-find x)
                 (setq elements (append elements (list i))))
         )
     elements)
 
-(print (find-element '(2 5 4 1 7 8 6 9) 1))
+(print (find-element '(2 5 4 1 7 8 1 9) 1))
