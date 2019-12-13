@@ -1,4 +1,5 @@
 ;; Задание 2
+
 ;; Сжатие списка
     (defun compress (lst &optional (current (car lst)) (len 1) tail)
         (cons (if (= current (cadr lst))
